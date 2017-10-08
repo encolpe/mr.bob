@@ -35,7 +35,8 @@ except ImportError:
 
 
 def read(*rnames):
-    return codecs.open(os.path.join(os.path.dirname(__file__), *rnames), 'r', 'utf-8').read()
+    return codecs.open(os.path.join(os.path.dirname(__file__), *rnames),
+                       'r', 'utf-8').read()
 
 
 setup(name='mr.bob',
@@ -43,15 +44,17 @@ setup(name='mr.bob',
       description='Bob renders directory structure templates',
       long_description=read('README.rst') + '\n' + read('HISTORY.rst'),
       classifiers=[
-          "Programming Language :: Python",
-          "Programming Language :: Python :: Implementation :: CPython",
-          "Programming Language :: Python :: Implementation :: PyPy",
-          "Programming Language :: Python :: 2.6",
-          "Programming Language :: Python :: 2.7",
-          "Programming Language :: Python :: 3",
-          "Programming Language :: Python :: 3.2",
-          "Programming Language :: Python :: 3.3",
-          "Programming Language :: Python :: 3.4",
+          'Programming Language :: Python',
+          'Programming Language :: Python :: Implementation :: CPython',
+          'Programming Language :: Python :: Implementation :: PyPy',
+          'Programming Language :: Python :: 2.6',
+          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.2',
+          'Programming Language :: Python :: 3.3',
+          'Programming Language :: Python :: 3.4',
+          'Programming Language :: Python :: 3.5',
+          'Programming Language :: Python :: 3.6',
       ],
       author='Domen Kozar, Tom Lazar',
       author_email='',
